@@ -12,7 +12,6 @@ request('https://jsonplaceholder.typicode.com/posts/1', function (error, respons
 	var jsonParsed = JSON.parse(body);
     console.log(jsonParsed.userId);
     assert.strictEqual(jsonParsed.userId, 1);
-    console.log(jsonParsed.userId)
     console.log('TC passed');
     } catch (error) {
       assert.strictEqual(error.message, 'TC failed');
